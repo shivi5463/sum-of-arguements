@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Arguments</title>
+</head>
+<body>
+
+    <h2>Sum of Arguments and Math Objects</h2>
+    <p id="demo"></p>
+    <p id="trig"></p>
+
+    <script>
+        // Function to calculate sum of all arguments
+        function sumAll() {
+            var sum = 0;
+
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+
+            return sum;
+        }
+
+        // Display sum result
+        document.getElementById("demo").innerHTML =
+            "Sum is: " + sumAll(1, 123, 500, 115, 44, 88);
+
+        // Trigonometric values
+        var sinValue = Math.sin(45);
+        var cosValue = Math.cos(45);
+        var tanValue = Math.tan(45);
+
+        document.getElementById("trig").innerHTML =
+            "Sin 45: " + sinValue + "<br>" +
+            "Cos 45: " + cosValue + "<br>" +
+            "Tan 45: " + tanValue;
+    </script>
+
+</body>
+</html>
